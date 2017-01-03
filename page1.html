@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+</head>
+<body>
+<div class="pageone">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3>Find Your Way Back in a Click</h3>
+<p>
+Get back home wherever you are, by choosing one of the following options to get back: Walking, Bicycling or Transit.
+</p>
+</div>
+<div class="pagetwo">
+ <div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+ </div>
+ <br>
+<div id="right-panel"></div>
+<div id="map"></div>
+<script src="script11.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxljaUpZflgXTefmi7enpYw0z_lNfnTg&libraries=places&callback=initMap">
+</script>
+</div>
+</body>
+</html>
