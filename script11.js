@@ -15,10 +15,6 @@ function initMap() {
       };
 
       var infowindow = new google.maps.InfoWindow();
-      var posl = {
-        lat: 41.878114,
-        lng: -87.629798
-      };
 
       //map.setCenter(posl);
       directionsDisplay.setMap(map);
@@ -42,7 +38,8 @@ function initMap() {
 function calculateAndDisplayRoute(directionsService, directionsDisplay,pos) {
   var selectedMode = document.getElementById('mode').value;
   directionsService.route({
-    origin: pos,  
+    origin: pos, 
+    //CHANGE END LOCATION HERE  
     destination: {lat: 37.785636, lng: -122.397119}, 
     travelMode: google.maps.TravelMode[selectedMode]
   }, function(response, status) {
